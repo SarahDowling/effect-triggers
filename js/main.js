@@ -7,21 +7,14 @@ $('.btn-move').on('click', function () {
 });
 
 $('.btn-collapse-expand').on('click', function () {
-  $('.box').toggleClass('expand');
+  $('.panel').toggleClass('expand');
 });
 
-// btn-collapse-expand
-//listen for button click
-// when clicked
-// change the height
-//
-//
-//
-//
-
-$('.btn-show-hide').on('click', function () {
-  $('.box').toggleClass('show-box');
+$('.btn-bounce').on('click', function () {
+  $('.circle').toggleClass('bounce-in');
 });
+
+
 // btn-bounce
 //listen for button click
 // when clicked

@@ -35,8 +35,7 @@ div {
 
   background-color: limegreen;
   opacity: 0;
-
-  /*TRANSITION GOES HERE*/
+  transition: .3s;
 }
 
 .show-box {
@@ -52,7 +51,7 @@ div {
   background-color: hotpink;
   transform: rotate(45deg);
 
-  /*TRANSITION HERE*/
+  transition: .3s;
 }
 
 .move-diamond {
@@ -70,12 +69,13 @@ div {
 
   color: darkgoldenrod;
   text-align: center;
+
+  transition: .3s;
 }
 
 .expand {
-
+  max-height: 0;
 }
-/*MAXHEIGHT of 0 toggle*/
 
 .panel h2 {
   margin: 0;
@@ -89,6 +89,10 @@ div {
 
   background-color: orange;
   border-radius: 50%;
+}
+
+.bounce-in{
+  /*STUFF HERE*/
 }
 
 .list {
