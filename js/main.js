@@ -11,23 +11,12 @@ $('.btn-collapse-expand').on('click', function () {
 });
 
 $('.btn-bounce').on('click', function () {
-  $('.circle').toggleClass('bounce-in');
+  $('.circle').addClass('bounce-in');
+});
+$('.circle').on('animationend', function () {
+  $('.circle').removeClass('bounce-in');
 });
 
-
-// btn-bounce
-//listen for button click
-// when clicked
-// bounce in left animation
-//put back when done
-//
-//
-//
-
-
-// create an li and put in ul, in css li ahve an animation, mx heigh
-
-// btn-append
-// listen for button click
-// when clicked
-// append&expand
+$('.btn-append').on('click', function () {
+  $('.list').prepend('<li>New List Item</li>');
+});

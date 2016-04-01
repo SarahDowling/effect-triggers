@@ -91,8 +91,35 @@ div {
   border-radius: 50%;
 }
 
-.bounce-in{
-  /*STUFF HERE*/
+.bounce-in {
+  animation: bounce 1.5s forwards;
+}
+
+@keyframes bounce {
+
+  0% {
+    top: calc(50% - 50px);
+  }
+
+  25% {
+    right: 10%;
+    top: calc(50% - 20px);
+  }
+
+  50% {
+    right: 20%;
+    top: calc(50% - 30px);
+  }
+
+  75% {
+    right: 30%;
+    top: calc(50% - 40px);
+  }
+
+  100% {
+    right: 40%;
+    top: calc(50% - 50px);
+  }
 }
 
 .list {
@@ -119,4 +146,17 @@ div {
   overflow: hidden;
 
   color: mediumpurple;
+
+  animation: list .5s forwards;
+}
+
+@keyframes list {
+
+  0% {
+    max-height: 0;
+  }
+
+  100% {
+    max-height: 1.5em;
+  }
 }
